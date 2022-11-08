@@ -2,3 +2,13 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
+/*
+#user_email:valid {
+    border-color: green;
+}
+
+#user_email:invalid {
+    border-color: red;
+}
+*/
