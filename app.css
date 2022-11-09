@@ -12,3 +12,8 @@ h1 {
     border-color: red;
 }
 */
+
+.password_msg_req {
+    color: rgb(190, 190, 190);
+    display: block;
+}
