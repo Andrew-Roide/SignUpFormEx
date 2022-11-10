@@ -8,56 +8,69 @@
     <link rel="Stylesheet" href="./app.css">
 </head>
 <body>
-    <h1>Sign Up Form Example</h1>
+    <div class="content">
 
-    <div class="form-container">
-        <form action="#" method="post">
-            <div>
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+        <div class="left">
+            <div class="photo_src">
+                <p>Photo by <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NASA</a> on <a href="https://unsplash.com/s/photos/moon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </p>
             </div>
+        </div>
 
-            <div>
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
-            </div>
 
-            <div>
-                <label for="user_email">Email*</label>
-                <input type="email" id="user_email" name="user_email" placeholder="email@example.com" required>
-            </div>
+        <div class="right">
+            <form action="#" method="post" class="form_box">
+                <div class="form_content">
+                    <div class="top_row">  
+                        <div>
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+                        </div>
 
-            <div>
-                <label for="phone_number">Phone Number</label>
-                <input type="tel" id="phone_number" name="phone" placeholder="(###)-###-####">
-            </div>
+                        <div>
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+                        </div>
 
-            <div>
-                <label for="password">Password*</label>
-                <input type="password" id="password" name="password" 
-                       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                       title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                       required>
-                       <span class="password_msg_req">(Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters)</span>
-            </div>
-            
-            <div>
-                <label for="password">Confirm Password*</label>
-                <input type="password" id="password_confirm" name="confirm_password" oninput="check(this)"
-                       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                       required>
-            </div>
+                        <div>
+                            <label for="user_email">Email*</label>
+                            <input type="email" id="user_email" name="user_email" placeholder="email@example.com" required>
+                        </div>
+                    </div>
+                    <div class="bottom_row">
+                        <div>
+                            <label for="phone_number">Phone Number</label>
+                            <input type="tel" id="phone_number" name="phone" placeholder="(###)-###-####">
+                        </div>  
 
-            <div>
-                <input type="submit">
-            </div>
+                        <div>
+                            <label for="password">Password*</label>
+                            <input type="password" id="password" name="password" 
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                required>
+                                <span class="password_msg_req">(Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters)</span>
+                        </div>
+                        
+                        <div>
+                            <label for="password">Confirm Password*</label>
+                            <input type="password" id="password_confirm" name="confirm_password" oninput="check(this)"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                                required>
+                        </div>
 
-            <div>
-                <span>Already a member? <a href="#">Log In</a> here.</span>
-            </div>
-        </form>
+                        <div class="btn">
+                            <input type="submit">
+                        </div>
+                    </div>
+                    <div>
+                        <span>Already a member? Log In <a href="#">here</a>.</span>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-
+    
     <script>
         function check(input) {
             if (input.value != document.getElementById('password').value) {
