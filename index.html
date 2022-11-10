@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign  Up Form Example</title>
     <link rel="Stylesheet" href="./app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="content">
@@ -19,7 +22,13 @@
 
 
         <div class="right">
-            <form action="#" method="post" class="form_box">
+            <div class="dummy_text">
+                <p>This is not a real online service! Don't input your actual information or password. If you do,
+                    nothing will actually happen. It doesn't get submitted anywhere.
+                </p>
+                <p>I don't know. I'm not the boss of you. Do whatever.</p>
+            </div>
+            <form action="#" method="post">
                 <div class="form_content">
                     <div class="top_row">  
                         <div>
@@ -49,7 +58,6 @@
                                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
                                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                                 required>
-                                <span class="password_msg_req">(Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters)</span>
                         </div>
                         
                         <div>
@@ -58,16 +66,19 @@
                                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
                                 required>
                         </div>
-
-                        <div class="btn">
-                            <input type="submit">
-                        </div>
                     </div>
-                    <div>
-                        <span>Already a member? Log In <a href="#">here</a>.</span>
+
+                    <p class="password_msg_req">*Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters)</p>
+                    
+                    <div class="btn">
+                        <button type="submit">Create Account</button>
                     </div>
                 </div>
             </form>
+            <div class="member_login">
+                <p class="member_content">Already a member? Log In <a href="#">here</a>.</p>
+            </div>
+        </div>
         </div>
     </div>
     
