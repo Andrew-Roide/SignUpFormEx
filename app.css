@@ -1,6 +1,21 @@
+* {
+    font-family: 'Macondo', cursive;
+    font-family: 'Orbitron', sans-serif;
+}
+
 body {
     margin: 0;
 }
+
+a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
 
 .content {
     display: flex;
@@ -9,27 +24,57 @@ body {
     background-color: black;
 }
 
+/* left side */
 .left {
     background: url(./Images/nasa-pd4lo70LdbI-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    width: 40vw;
+    background-size:contain;
+    width: 60vw;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
+/* right side */
 .right {
     display: flex;
-    margin-left: 20px;
-    margin-top: 40vh;
+    flex-direction: column;
+    margin-top: 10vh;
+    width: 80vw;
+    padding-left: 3vw;
 }
 
+.dummy_text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 45vw;
+}
+
+/* form content */
 form {
     display: flex;
+    margin-top: 15vh;
+    width: 60vw;
     justify-content: center;
-    height: 30px;
+    flex-direction: column-reverse;
+}
+
+input {
+    display: flex;
+    background-color: rgb(2, 2, 2);
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+    color: rgb(77, 77, 77);
+    font-size: 1rem;
+    width: 14vw;
+}
+
+label {
+    padding-bottom: 20px;
 }
 
 .form_content {
@@ -37,10 +82,11 @@ form {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
-    justify-content: space-between;
     color: white;
     height: 20vh;
-    width: 20vw;
+    width: auto;
+    font-size: large;
+    padding-right: 15vw;
 }
 
 .top_row {
@@ -55,10 +101,25 @@ form {
     gap: 2rem;
 }
 
+button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(77, 77, 77);
+}
+
 .password_msg_req {
-    color: rgb(151, 149, 149);
+    color: rgb(77, 77, 77);
     display: flex;
     justify-content: center;
+    font-size: 15px;
+    margin: 0;
+    padding-right: 20vw;
 }
 
 .photo_src {
@@ -66,4 +127,11 @@ form {
     justify-content: center;
     color: white;
     margin-bottom: 10px;
+}
+
+.member_login {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
 }
