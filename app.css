@@ -36,6 +36,13 @@ a:link {
     justify-content: center;
 }
 
+.photo_src {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
 /* right side */
 .right {
     display: flex;
@@ -71,6 +78,15 @@ input {
     color: rgb(77, 77, 77);
     font-size: 1rem;
     width: 14vw;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid white;
+}
+
+input, select, textarea{
+    color: white;
 }
 
 label {
@@ -120,13 +136,6 @@ button:hover{
     font-size: 15px;
     margin: 0;
     padding-right: 20vw;
-}
-
-.photo_src {
-    display: flex;
-    justify-content: center;
-    color: white;
-    margin-bottom: 10px;
 }
 
 .member_login {
