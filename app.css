@@ -1,19 +1,69 @@
-h1 {
+body {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+    width: auto;
+    background-color: black;
+}
+
+.left {
+    background: url(./Images/nasa-pd4lo70LdbI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 40vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 40vh;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.form_content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    color: white;
+    height: 20vh;
+    width: 20vw;
+}
+
+.top_row {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.bottom_row {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.password_msg_req {
+    color: rgb(151, 149, 149);
     display: flex;
     justify-content: center;
 }
 
-/*
-#user_email:valid {
-    border-color: green;
-}
-
-#user_email:invalid {
-    border-color: red;
-}
-*/
-
-.password_msg_req {
-    color: rgb(190, 190, 190);
-    display: block;
+.photo_src {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10px;
 }
