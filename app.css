@@ -65,7 +65,7 @@ a:link {
 form {
     display: flex;
     margin-top: 10vh;
-    margin-right: 18vw;
+    margin-right: 17vw;
     justify-content: center;
     flex-direction: column-reverse;
 }
@@ -87,10 +87,6 @@ input:focus {
 
 input, select, textarea{
     color: white;
-}
-
-label {
-    padding-bottom: 20px;
 }
 
 .form_content {
