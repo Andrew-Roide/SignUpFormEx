@@ -11,7 +11,7 @@ a:link {
     color: white;
   }
   
-  /* visited link */
+/* visited link */
   a:visited {
     color: white;
   }
@@ -114,8 +114,6 @@ input, select, textarea{
     gap: 2rem;
 }
 
-
-
 button {
     background-color: rgba(0, 0, 0, 0);
     color: white;
@@ -125,7 +123,12 @@ button {
     font-size: 20px;
     margin: 8px;
 }
-button:hover{
+
+.btn:active {
+    background-color: rgb(134, 134, 134);
+}
+
+button:hover {
     background-color: rgb(77, 77, 77);
 }
 
