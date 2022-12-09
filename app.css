@@ -108,17 +108,13 @@ input, select, textarea{
 
 }
 
-.top_row {
+.top_row, .bottom_row {
     display: flex;
     justify-content: space-evenly;
     gap: 2rem;
 }
 
-.bottom_row {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2rem;
-}
+
 
 button {
     background-color: rgba(0, 0, 0, 0);
